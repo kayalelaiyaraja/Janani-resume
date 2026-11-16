@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayal | Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #fff5fa;
+            color: #49384f;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #f4dcec;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #a04c85;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #60445e;
+            margin: 10px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #c05c9d;
+        }
+
+        section {
+            padding: 65px 10%;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #ffe5f1, #e9dcff);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #a04c85;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin: 15px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #b66a9e;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        h2.section-title {
+            text-align: center;
+            color: #a04c85;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px #e9cddd;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card h3 {
+            color: #a04c85;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #f2d9eb;
+            padding: 10px 18px;
+            border-radius: 20px;
+            margin: 7px;
+        }
+
+        .quote {
+            background: #eadfff;
+            text-align: center;
+            font-size: 21px;
+            font-style: italic;
+            color: #76518c;
+            border-radius: 20px;
+            padding: 35px;
+        }
+
+        footer {
+            background: #eacfe3;
+            text-align: center;
+            padding: 22px;
+            color: #68465e;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                text-align: center;
+                margin-top: 12px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            section {
+                padding: 45px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>🌸 Kayal's Portfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#interests">Interests</a>
+            <a href="#skills">Skills</a>
+            <a href="#dreams">Dreams</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <h1>Hi, I'm Kayal! 💗</h1>
+        <p>First Year B.Tech Information Technology Student</p>
+        <p>Future Software Engineer | Creative Learner | Dreamer ✨</p>
+
+        <a href="#about" class="btn">Explore About Me</a>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2 class="section-title">🌷 About Me</h2>
+
+        <div class="about">
+            <p>
+                Hello! I'm Kayal E, a first-year B.Tech Information
+                Technology student at Nehru Institute of Technology,
+                Coimbatore.
+
+                I'm passionate about technology, programming and
+                web development. I love learning new skills,
+                exploring creativity and building my future in IT.
+            </p>
+        </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests">
+        <h2 class="section-title">💗 My Interests</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>🎵 Music</h3>
+                <p>I love listening to melody songs and folk music.</p>
+            </div>
+
+            <div class="card">
+                <h3>💃 Dancing</h3>
+                <p>I enjoy dancing, especially traditional folk dance.</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Technology</h3>
+                <p>I love programming, creating websites and exploring technology.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎨 Creativity</h3>
+                <p>I enjoy digital creativity and beautiful website designs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strengths -->
+    <section id="strengths">
+        <h2 class="section-title">⭐ My Strengths</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Curiosity</h3>
+                <p>Always interested in learning new things.</p>
+            </div>
+
+            <div class="card">
+                <h3>Creativity</h3>
+                <p>Enjoy exploring new ideas and designs.</p>
+            </div>
+
+            <div class="card">
+                <h3>Persistence</h3>
+                <p>Willing to practise and learn from mistakes.</p>
+            </div>
+
+            <div class="card">
+                <h3>Goal-Oriented</h3>
+                <p>Focused on building a successful career.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="section-title">💻 My Learning Skills</h2>
+
+        <div class="skills" style="text-align:center;">
+            <span>C Programming</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>MATLAB</span>
+            <span>Git & GitHub</span>
+            <span>Problem Solving</span>
+            <span>Web Development</span>
+        </div>
+    </section>
+
+    <!-- Future Dreams -->
+    <section id="dreams">
+        <h2 class="section-title">🚀 My Future Dreams</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>👩‍💻 Software Engineer</h3>
+                <p>Become a skilled software engineer.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏢 Top Companies</h3>
+                <p>Dream of working at Google, Microsoft or Amazon.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌍 Real Projects</h3>
+                <p>Build creative and useful real-world projects.</p>
+            </div>
+
+            <div class="card">
+                <h3>💖 Family</h3>
+                <p>Make my family proud through my achievements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivation -->
+    <section>
+        <div class="quote">
+            "Don't compare your Chapter 1 with someone else's
+            Chapter 20. Keep learning, keep growing and trust
+            your journey." 🌸
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with 💗 by Kayal E</p>
+        <p>© 2026 | My Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
